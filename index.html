@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="clac">
+        <h1>Calculator</h1>
+     <table>
+         <tr>
+             <th colspan="3" ><input type="text" id="res" placeholder="0"></th>
+             <th id="ac" onclick="clr()" ><span>AC</span></th>
+         </tr>
+         <tr>
+            <td><p id="per" onclick="per()">%</p></td>
+            <td><p id="fact">!X</p></td>
+            <td><p id="power" onclick="inp('**')">X^</p></td>
+            <td><p id="root" onclick="root()">√×</p></td>
+
+         </tr>
+         <tr>
+             <td><p onclick="inp('9')">9</p></td>
+            <td><p onclick="inp('8')">8</p></td>
+            <td><p onclick="inp('7')">7</p></td>
+            <td><p onclick="inp('/')">/</p></td>
+         </tr>
+         
+         <tr>
+             <td><p onclick="inp('6')">6</p></td>
+            <td><p onclick="inp('5')">5</p></td>
+            <td><p onclick="inp('4')">4</p></td>
+            <td><p onclick="inp('*')">*</p></td>
+         </tr>
+         <tr>
+             <td><p onclick="inp('3')">3</p></td>
+            <td><p onclick="inp('2')">2</p></td>
+            <td><p onclick="inp('1')">1</p></td>
+            <td><p onclick="inp('-')">-</p></td>
+         </tr>
+         <tr>
+             <td><p onclick="inp('.')">.</p></td>
+            <td><p onclick="inp('0')">0</p></td>
+            <td id="cal"><p>=</p></td>
+            <td><p onclick="inp('+')">+</p></td>
+         </tr>
+     </table>
+     </div>
+</body>
+<script src="index.js"></script>
+</html>
